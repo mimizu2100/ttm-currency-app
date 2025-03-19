@@ -222,22 +222,8 @@ adsense_code = """
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2958467413596879"
      crossorigin="anonymous"></script>
 """
-
 # Streamlit に広告スクリプトを挿入
 st.markdown(adsense_code, unsafe_allow_html=True)
-
-st.title("💱 TTM ドル円確定申告アプリ")
-st.write("アプリの説明をここに書く...")
-
-# --- Q&A セクション ---
-st.subheader("❓ よくある質問 (Q&A)")
-faq_data = {
-    "📌 このアプリはなに？": "確定申告を簡単にするためのドル円換算ツールです。",
-    "📌 TTMを取得している銀行は？": "三菱UFJ銀行のTTMを使用しています。",
-}
-for question, answer in faq_data.items():
-    with st.expander(question):
-        st.write(answer)
 
 # Q&Aの下にもう一度広告を入れる
 st.markdown(adsense_code, unsafe_allow_html=True)
