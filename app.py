@@ -214,3 +214,6 @@ faq_data = {
 for question, answer in faq_data.items():
     with st.expander(question):
         st.write(answer)
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2958467413596879"
+     crossorigin="anonymous"></script>
