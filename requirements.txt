@@ -1,4 +1,3 @@
-streamlit
-pandas
-requests
-beautifulsoup4
+git add app.py
+git commit -m "Fix: remove git commands from app.py"
+git push origin main
