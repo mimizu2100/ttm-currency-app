@@ -4,12 +4,20 @@ import streamlit as st
 ADS_TXT_CONTENT = "google.com, pub-2958467413596879, DIRECT, f08c47fec0942fa0"
 
 # URLパスが "ads.txt" のときに内容を表示
-if st.query_params.get("file") == "ads.txt":
+query_params = st.experimental_get_query_params()
+if "file" in query_params and query_params["file"][0] == "ads.txt":
     st.text(ADS_TXT_CONTENT)
     st.stop()
 
 st.title("TTM ドル円換算アプリ")
 st.write("Streamlit 上にホストされているアプリです。")
+
+import pandas as pd
+import os
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
+
 
 import pandas as pd
 import os
