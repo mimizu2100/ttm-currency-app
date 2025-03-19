@@ -2,7 +2,10 @@ import streamlit as st
 import pandas as pd
 import os
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup4
+git add requirements.txt
+git commit -m "Add beautifulsoup4 to requirements"
+git push origin main
 from datetime import datetime, timedelta
 
 # 📁 保存するTTMデータファイル
