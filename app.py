@@ -1,4 +1,13 @@
 import streamlit as st
+
+adsense_code = """
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2958467413596879"
+     crossorigin="anonymous"></script>
+"""
+
+st.markdown(adsense_code, unsafe_allow_html=True)
+
+import streamlit as st
 import pandas as pd
 import os
 import requests
@@ -216,15 +225,3 @@ for question, answer in faq_data.items():
         st.write(answer)
 
 import streamlit as st
-
-# AdSenseコードを埋め込む
-adsense_code = """
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2958467413596879"
-     crossorigin="anonymous"></script>
-"""
-# Streamlit に広告スクリプトを挿入
-st.markdown(adsense_code, unsafe_allow_html=True)
-
-# Q&Aの下にもう一度広告を入れる
-st.markdown(adsense_code, unsafe_allow_html=True)
-
