@@ -1,13 +1,6 @@
 import streamlit as st
 
-# AdSenseのスクリプトをHTMLで埋め込む
-adsense_code = """
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2958467413596879"
-     crossorigin="anonymous"></script>
-"""
-
-# StreamlitでHTMLとして埋め込む
-st.markdown(adsense_code, unsafe_allow_html=True)
+st.text_area("ads.txt", "google.com, pub-2958467413596879, DIRECT, f08c47fec0942fa0")
 
 import pandas as pd
 import os
