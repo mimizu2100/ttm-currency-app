@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import requests
-from bs4 import BeautifulSoup4
+from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
 # 📁 保存するTTMデータファイル
