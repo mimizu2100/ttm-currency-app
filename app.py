@@ -1,17 +1,4 @@
 import streamlit as st
-
-# ads.txt の内容
-ADS_TXT_CONTENT = "google.com, pub-2958467413596879, DIRECT, f08c47fec0942fa0"
-
-# URLパスが "ads.txt" のときに内容を表示
-query_params = st.query_params
-if "file" in query_params and query_params["file"] == "ads.txt":
-    st.text(ADS_TXT_CONTENT)
-    st.stop()
-
-st.title("TTM ドル円換算アプリ")
-st.write("Streamlit 上にホストされているアプリです。")
-
 import pandas as pd
 import os
 import requests
